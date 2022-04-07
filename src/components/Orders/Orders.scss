@@ -1,0 +1,59 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    .col-md-4 {
+        display: flex;
+        justify-content: center;
+    }
+    img {
+        max-width: 250px;
+    }
+}
+
+.orders {
+    justify-content: center;
+}
+@media only screen and (min-width: 768px) {
+}
+
+// Loading screen animation
+.loading {
+    background-color: black;
+    color: white;
+    opacity: 0.5;
+
+    font-size: 30px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading:after {
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom;
+    animation: ellipsis steps(5, end) 1000ms infinite;
+    content: "\2026\2026"; /* ascii code for the ellipsis character */
+    width: 0px;
+}
+
+@keyframes ellipsis {
+    to {
+        width: 1.15em;
+    }
+}
+
+@-webkit-keyframes ellipsis {
+    to {
+        width: 1.5em;
+    }
+}

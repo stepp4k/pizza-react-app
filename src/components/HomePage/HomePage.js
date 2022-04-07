@@ -1,10 +1,12 @@
 import './HomePage.scss'
-
+import { GiFullPizza } from 'react-icons/gi'
+import { NavLink } from 'react-router-dom'
 function HomePage() {
     return (
-        <div>
-            <h1>Welcome to Free Pizza delivery</h1>
-            <p>Here you can make an order of pizza</p>
+        <div className='main'>
+            <h1 className='main-title'>Welcome to Free Pizza delivery</h1>
+            <p className='main-p'>Here you can order some pizza 🍕</p>
+            <p><NavLink to='/get-your-pizza'><GiFullPizza size={'200px'} color={'orange'} /></NavLink></p>
         </div>
     )
 }
