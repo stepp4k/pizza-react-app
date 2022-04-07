@@ -5,5 +5,10 @@
     .main-p {
         font-size: larger;
     }
-    
+    svg {
+        color: #ffa600;
+        &:hover {
+            color: #ff7300d2
+        }
+    }
 }

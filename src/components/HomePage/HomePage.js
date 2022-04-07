@@ -6,7 +6,7 @@ function HomePage() {
         <div className='main'>
             <h1 className='main-title'>Welcome to Free Pizza delivery</h1>
             <p className='main-p'>Here you can order some pizza 🍕</p>
-            <p><NavLink to='/get-your-pizza'><GiFullPizza size={'200px'} color={'orange'} /></NavLink></p>
+            <p><NavLink to='/get-your-pizza'><GiFullPizza size={'200px'} /></NavLink></p>
         </div>
     )
 }
