@@ -139,8 +139,8 @@ function PizzaBuilder() {
                                     <fieldset >
                                         <input type='radio' value={'thin'} id='thin' name='crust' onChange={handleCrustChange} checked={crust === 'thin'} />
                                         <label className='crust-radio' htmlFor='thin'>Thin<br />🤏</label>
-                                        <input type='radio' value={'thick'} id='thick' name='crust' onChange={handleCrustChange} checked={crust === 'thick'} />
-                                        <label className='crust-radio' htmlFor='thick'>Thick<br />💪</label>
+                                        <input type='radio' value={'original'} id='original' name='crust' onChange={handleCrustChange} checked={crust === 'original'} />
+                                        <label className='crust-radio' htmlFor='original'>Original<br />💪</label>
                                         <input type='radio' value={'gluten-free'} id='gluten-free' name='crust' onChange={handleCrustChange} checked={crust === 'gluten-free'} />
                                         <label className='crust-radio' htmlFor='gluten-free'>Gluten-Free<br />🍃</label>
                                     </fieldset>
